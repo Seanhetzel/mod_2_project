@@ -1,0 +1,16 @@
+<%= @quiz.name %><hr>
+
+
+<% @quiz.questions.each do |question| %>
+<div>
+
+<%= question.name %><br>
+
+<form action='/user_options/' method='post'>
+
+<% end %>
+</div>
+
+<% end %>
+
+
