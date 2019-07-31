@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     byebug
-    @user = User.new(username: params[:user][:username], password_digest: params[:user][:password])
+    @user = User.new(username: params[:user][:username], password: params[:user][:password])
     if @user.save
       redirect_to quizzes_path
     else
