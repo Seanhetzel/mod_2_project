@@ -5,7 +5,6 @@ class QuizzesController < ApplicationController
     end
 
     def show
-        
         @quiz = Quiz.find(params[:id])
         # @questions = @quiz.questions
         @options = @quiz.questions.first.options
