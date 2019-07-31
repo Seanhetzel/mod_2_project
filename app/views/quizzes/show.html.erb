@@ -1,18 +1,37 @@
 <h1><%= @quiz.name %></h1>
 
-<div>
-<%= form_for @user_options do |f| %>
 <%= @quiz.questions.first.name %>
-
-<%= f.collection_select :option_id, Option.where("id = '1' OR id = '2'"), :id, :name %>
-
-<hr>
-<%= @quiz.questions.second.name %>
-<%= f.collection_select :option_id, Option.where("id = '3' OR id = '4'"), :id, :name %>
-<hr>
-<%= @quiz.questions.third.name %>
-<%= f.collection_select :option_id, Option.where("id = '5' OR id = '6' OR id = '7' OR id = '8'"), :id, :name %>
-</div>
-
-<%= f.submit %>
+<% if @quiz.id == 1 %>
+  <%= form_for @user_options do |f| %>
+    <%= f.collection_select :option_id_1, Option.where("id = '1' OR id = '2'"), :name, :name %>
+    <hr>
+    <%= @quiz.questions.second.name %>
+    <%= f.collection_select :option_id_2, Option.where("id = '3' OR id = '4'"), :name, :name %>
+    <hr>
+    <%= @quiz.questions.third.name %>
+    <%= f.collection_select :option_id_3, Option.where("id = '5' OR id = '6' OR id = '7' OR id = '8'"), :name, :name %>
+  <%= f.submit %>
+  <% end %>
+<% elsif @quiz.id == 2 %>
+  <%= form_for @user_options do |f| %>
+  <%= f.collection_select :option_id_1, Option.where("id = '9' OR id = '10'"), :name, :name %>
+  <hr>
+  <%= @quiz.questions.second.name %>
+  <%= f.collection_select :option_id_2, Option.where("id = '11' OR id = '12'"), :name, :name %>
+  <hr>
+  <%= @quiz.questions.third.name %>
+  <%= f.collection_select :option_id_3, Option.where("id = '13' OR id = '14'"), :name, :name %>
+  <%= f.submit %>
+  <% end %>
+<% elsif @quiz.id == 3 %>
+  <%= form_for @user_options do |f| %>
+    <%= f.collection_select :option_id_1, Option.where("id = '15' OR id = '16'"), :name, :name %>
+    <hr>
+    <%= @quiz.questions.second.name %>
+    <%= f.collection_select :option_id_2, Option.where("id = '17' OR id = '18'"), :name, :name %>
+    <hr>
+    <%= @quiz.questions.third.name %>
+    <%= f.collection_select :option_id_3, Option.where("id = '19' OR id = '20'"), :name, :name %>
+  <%= f.submit %>
+  <% end %>
 <% end %>
