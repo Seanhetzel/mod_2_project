@@ -13,3 +13,168 @@
  *= require_tree .
  *= require_self
  */
+ .menu {
+  text-align: right;
+}
+
+
+
+.wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #1ECBE1;
+  text-align: center; */
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  
+}
+
+.wrapper h1,h2,h3,h4{
+  font-family: open-sans, arial;
+}
+
+.title{
+  font-size: 2em;
+  /* grid-row: 1/5; */
+  grid-area: 1 / 2 / 2 / 5;
+  /* background-color: black; */
+  text-align: center;
+}
+
+.cbutton {
+  /* background: #0066A2; */
+  /* border-style: outset; */
+  border-color: black;
+  border-style: dotted;
+  border-width: 2px;
+  height: 50px;
+  width: 100px;
+  font: bold 15px arial, sans-serif;
+  /* text-shadow:none; 
+  display: block; */
+}
+
+#cbutton:hover {
+  background: #0066A2;
+  color: black;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 50px;
+  width: 100px;
+  font: bold 15px arial, sans-serif;
+  text-shadow:none; */
+  display: block;
+}
+
+
+.credentials {
+  display: inline-block;
+  background-color:#015CFE;
+  font-size: 2em;
+  color: white;
+  font-family: Arial;
+} 
+
+.questions {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+  /* background-color: grey; */
+  /* grid-row: 2/3;  */
+  grid-area: 3 / 2 / 6 / 5; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  border-style: solid;
+  border-width: 2px;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: open-sans, arial;
+}
+
+a:visited {
+  color: white;
+}
+
+li a:hover {
+  color: black;
+}
+
+div a { 
+  color:black;
+}
+
+body {
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
+}
+
+h1, h6 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
+}

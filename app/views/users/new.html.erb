@@ -1,5 +1,9 @@
+<%= stylesheet_link_tag "application.css" %>
+
+<div class="wrapper">
 <h2><%= flash[:message] %></h2>
 <br><br>
+<div class="credentials">
 <%= form_for @user do |f| %>
   <%= f.label :username %>
   <%= f.text_field :username %>
@@ -12,3 +16,5 @@
   <br>
   <%= f.submit %>
 <% end %>
+</div>
+</div>
