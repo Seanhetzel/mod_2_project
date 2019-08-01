@@ -15,6 +15,8 @@
  */
  .menu {
   text-align: right;
+  font-family: 'Open Sans', Arial;
+  font-size: 1em
 }
 
 
@@ -73,10 +75,11 @@
 
 .credentials {
   display: inline-block;
-  background-color:#015CFE;
+  /* background-color:#015CFE; */
   font-size: 2em;
   color: white;
   font-family: Arial;
+  grid-area: 3 / 3 / 6 / 5;
 } 
 
 .questions {
