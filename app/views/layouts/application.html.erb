@@ -11,6 +11,10 @@
       <div>
         <%= link_to 'Logout', logout_path, {class: 'item'} %>
       </div>
+    <% else %>
+      <div>
+        <%= link_to 'Sign up', new_user_path, {class: 'item'} %>
+      </div>
     <% end %>
     <br>
   </head>

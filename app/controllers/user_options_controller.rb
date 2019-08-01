@@ -5,6 +5,7 @@ class UserOptionsController < ApplicationController
         if @uo
             @uo.save
         end
+        
     end
 
     private
