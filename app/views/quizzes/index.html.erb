@@ -1,3 +1,5 @@
+<h1>Welcome to the quiz that tells you about yourself!</h1>
+
 <% @quizzes.each do |quiz| %>
 <%= link_to quiz.name, quiz_path(quiz) %><br>
 <% end %>

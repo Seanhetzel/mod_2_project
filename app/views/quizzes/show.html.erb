@@ -1,16 +1,12 @@
 <%= @quiz.name %><hr>
 
+<%= form_tag quizzes_path do %>
+    <% @quiz.questions.each do |question| %>
+        <%= question.name %><br>
 
-<% @quiz.questions.each do |question| %>
-<div>
 
-<%= question.name %><br>
-
-<form action='/user_options/' method='post'>
-
+        <%= collection_select :option, :option_id, question.options, :id, :name %><br>
+        
+    <% end %>
+<%= submit_tag "Submit" %>
 <% end %>
-</div>
-
-<% end %>
-
-

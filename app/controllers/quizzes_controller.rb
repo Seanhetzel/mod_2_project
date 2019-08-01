@@ -7,14 +7,21 @@ class QuizzesController < ApplicationController
     def show
         
         @quiz = Quiz.find(params[:id])
-        # @questions = @quiz.questions
-        @options = @quiz.questions.first.options
         @user_options = UserOption.new 
+        #@question = @quiz.questions.first
+        #@options = @quiz.questions.first.options
+        #render :show
     end
-
-    # def test
-    #     byebug
-    # end
+    
+    def create
+        # @heroine = Heroine.new(heroine_params)
+        # if @heroine.save!
+        #   redirect_to @heroine
+        # else
+        #   render :new 
+        # end
+        #byebug
+      end
 
     def new
         @quiz = Quiz.new
