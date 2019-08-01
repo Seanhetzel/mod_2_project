@@ -1,13 +1,16 @@
-<h1></h1>
 
-<% @response_record.each do |r| %>
-  The question: <%= r.quiz.questions.first.name %>
-  Your answer: <%= r.option_response_1 %>
-  <br>
-  The question: <%= r.quiz.questions.second.name %>
-  Your answer: <%= r.option_response_2 %>
-  <br>
-  The question: <%= r.quiz.questions.third.name %>
-  Your answer: <%= r.option_response_3 %>
-  <hr>
-<% end %>
+<div class="wrapper">
+  <div class="results">
+    <% @response_record.each do |r| %>
+      The question: <%= r.quiz.questions.first.name %>
+      Your answer: <%= r.option_response_1 %>
+      <br>
+      The question: <%= r.quiz.questions.second.name %>
+      Your answer: <%= r.option_response_2 %>
+      <br>
+      The question: <%= r.quiz.questions.third.name %>
+      Your answer: <%= r.option_response_3 %>
+      <hr>
+    <% end %>
+  </div>
+</div>

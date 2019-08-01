@@ -1,7 +1,13 @@
-<%= form_for :auth do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :password %>
-  <%= f.password_field :password %><br>
-  <%= f.submit "Login" %>
-<% end %>
+<div class="wrapper">
+  <div class="credentials">
+    <%= form_for :auth do |f| %>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+      <br>
+      <%= f.label :password %>
+      <%= f.password_field :password %><br>
+      <br>
+      <%= f.submit "Login" %>
+    <% end %>
+  </div>
+</div>
