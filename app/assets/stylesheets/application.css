@@ -34,7 +34,7 @@
 }
 
 .wrapper h1,h2,h3,h4{
-  font-family: open-sans, arial;
+  font-family: 'Open Sans', arial;
 }
 
 .title{
@@ -87,6 +87,13 @@
   /* background-color: grey; */
   /* grid-row: 2/3;  */
   grid-area: 3 / 2 / 6 / 5; 
+}
+
+.results {
+  font-size: 1em;
+  color: white;
+  font-family: 'Open Sans', Arial;
+  grid-area: 1 / 2 / 6 / 5; 
 }
 
 ul {
