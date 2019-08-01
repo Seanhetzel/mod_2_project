@@ -4,12 +4,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    byebug
     @user = User.new(username: params[:user][:username], password: params[:user][:password])
     if @user.save
       redirect_to quizzes_path
     else
-      flash[:message] = "Please enter the correct stuff"
+      flash[:message] = "Re-enter credentials"
       render :new
     end
   end

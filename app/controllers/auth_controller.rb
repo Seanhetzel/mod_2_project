@@ -1,4 +1,6 @@
 class AuthController < ApplicationController
+  
+
   def login
   end
 
@@ -11,5 +13,10 @@ class AuthController < ApplicationController
     else
       render :login
     end
+  end
+
+  def logout
+    session.clear
+    redirect_to login_path
   end
 end

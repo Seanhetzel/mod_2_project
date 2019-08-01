@@ -1,4 +1,5 @@
 class QuizzesController < ApplicationController
+    before_action :redirect_user
 
     def index
         @quizzes = Quiz.all 
@@ -6,14 +7,9 @@ class QuizzesController < ApplicationController
 
     def show
         @quiz = Quiz.find(params[:id])
-        # @questions = @quiz.questions
         @options = @quiz.questions.first.options
         @user_options = UserOption.new 
     end
-
-    # def test
-    #     byebug
-    # end
 
     def new
         @quiz = Quiz.new
