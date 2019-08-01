@@ -7,7 +7,7 @@ class QuizzesController < ApplicationController
 
     def show
         @quiz = Quiz.find(params[:id])
-        @options = @quiz.questions.first.options
+        # @options = @quiz.questions.first.options
         @user_options = UserOption.new 
     end
 
@@ -16,7 +16,6 @@ class QuizzesController < ApplicationController
     end
 
     def edit
-        byebug
         @quiz = Quiz.find(params[:id])
     end
 end

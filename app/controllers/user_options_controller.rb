@@ -13,13 +13,15 @@ class UserOptionsController < ApplicationController
 
     def results
         @response_record = UserOption.find_by(user_id: session[:user_id])
+        # @response_record = UserOption.where("user_id = '' ")
+        # byebug
         @user = User.find(@response_record.user_id)
         render '/quizzes/results'
     end
 
-    private
+    # private
 
-    def result_params(*args)
-        params.require(:user_option).permit(:option_response_1, :option_response_2, :option_response_3)
-    end
+    # def result_params(*args)
+    #     params.require(:user_option).permit(:option_response_1, :option_response_2, :option_response_3)
+    # end
 end
