@@ -1,27 +1,18 @@
 class QuizzesController < ApplicationController
+    before_action :redirect_user
 
     def index
         @quizzes = Quiz.all 
     end
 
     def show
-        
         @quiz = Quiz.find(params[:id])
+        @options = @quiz.questions.first.options
         @user_options = UserOption.new 
         #@question = @quiz.questions.first
         #@options = @quiz.questions.first.options
         #render :show
     end
-    
-    def create
-        # @heroine = Heroine.new(heroine_params)
-        # if @heroine.save!
-        #   redirect_to @heroine
-        # else
-        #   render :new 
-        # end
-        # byebug
-      end
 
     def new
         @quiz = Quiz.new

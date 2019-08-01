@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   resources :quizzes
+  resources :users
   resources :user_options
   resources :options
   root 'quizzes#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/login', to: "auth#login", as: "login_path"
+  post '/login', to: "auth#verify"
+  get '/logout', to: "auth#logout", as: "logout"
 end

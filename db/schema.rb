@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_31_170355) do
+ActiveRecord::Schema.define(version: 2019_08_01_003254) do
 
   create_table "options", force: :cascade do |t|
     t.string "name"
@@ -34,14 +34,17 @@ ActiveRecord::Schema.define(version: 2019_07_31_170355) do
 
   create_table "user_options", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "option_id"
+    t.integer "quiz_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "option_response_1"
+    t.string "option_response_2"
+    t.string "option_response_3"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "password"
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
