@@ -11,7 +11,7 @@
     <hr>
     <%= @quiz.questions.third.name %>
     <%= f.collection_select :option_response_3, Option.where("id = '5' OR id = '6' OR id = '7' OR id = '8'"), :name, :name %>
-  <%= f.submit %>
+  <%= f.submit "Submit" %>
   <% end %>
 <% elsif @quiz.id == 2 %>
   <%= form_for @user_options, :url => user_options_path(@user_options, :qid => @quiz.id), :html => {:method => :post}  do |f| %>
@@ -23,7 +23,7 @@
   <hr>
   <%= @quiz.questions.third.name %>
   <%= f.collection_select :option_response_3, Option.where("id = '13' OR id = '14'"), :name, :name %>
-  <%= f.submit %>
+  <%= f.submit "Submit" %>
   <% end %>
 <% elsif @quiz.id == 3 %>
   <%= form_for @user_options, :url => user_options_path(@user_options, :qid => @quiz.id), :html => {:method => :post}  do |f| %>
@@ -35,6 +35,6 @@
     <hr>
     <%= @quiz.questions.third.name %>
     <%= f.collection_select :option_response_3, Option.where("id = '19' OR id = '20'"), :name, :name %>
-  <%= f.submit %>
+  <%= f.submit "Submit" %>
   <% end %>
 <% end %>
