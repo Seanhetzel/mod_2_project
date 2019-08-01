@@ -1,0 +1,12 @@
+<h1></h1>
+
+Your name is: <%= @user.username %>
+<br><br>
+The first question: <%= @response_record.quiz.questions.first.name %>
+Your answer: <%= @response_record.option_response_1 %>
+<hr>
+The second question: <%= @response_record.quiz.questions.second.name %>
+Your answer: <%= @response_record.option_response_2 %>
+<hr>
+The third question: <%= @response_record.quiz.questions.third.name %>
+Your answer: <%= @response_record.option_response_2 %>
