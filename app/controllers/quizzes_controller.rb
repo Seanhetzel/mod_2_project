@@ -20,7 +20,7 @@ class QuizzesController < ApplicationController
         # else
         #   render :new 
         # end
-        #byebug
+        # byebug
       end
 
     def new
