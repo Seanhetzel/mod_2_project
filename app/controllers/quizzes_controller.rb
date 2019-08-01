@@ -18,10 +18,15 @@ class QuizzesController < ApplicationController
         @quiz = Quiz.new
     end
 
+    def create 
+        #byebug 
+    end
+
     def edit
         byebug
         @quiz = Quiz.find(params[:id])
     end
+
 end
 
 # <%= @quiz.name %><hr>
