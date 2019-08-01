@@ -1,9 +1,16 @@
 class UserOptionsController < ApplicationController
     def create
         byebug
-        # params[:user_option][:option_id_1]
-        # params[:user_option][:option_id_2]
-        # params[:user_option][:option_id_3]
-        # UserOption.create(user_id: session[:user_id], option_id_1: params[:user_option][:option_id_1], option_id_2: params[:user_option][:option_id_2], option_id_3: params[:user_option][:option_id_3])
+        # params[:user_option][:option_response_1]
+        # params[:user_option][:option_response_2]
+        # params[:user_option][:option_response_3]
+        # UserOption.create(user_id: session[:user_id], quiz_id: params[:qid], option_response_1: params[:user_option][:option_response_1], option_response_2: params[:user_option][:option_response_2], option_response_3: params[:user_option][:option_response_3])
+        UserOption.create(user_id: session[:user_id], quiz_id: params[:qid], option_response_1: params[:user_option][:option_response_1], option_response_2: params[:user_option][:option_response_2], option_response_3: params[:user_option][:option_response_3])
+    end
+
+    private
+
+    def result_params(*args)
+        
     end
 end
