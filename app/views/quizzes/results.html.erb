@@ -3,12 +3,15 @@
   <div class="results">
     <% @response_record.each do |r| %>
       The question: <%= r.quiz.questions.first.name %>
+      <br>
       Your answer: <%= r.option_response_1 %>
       <br>
       The question: <%= r.quiz.questions.second.name %>
+      <br>
       Your answer: <%= r.option_response_2 %>
       <br>
       The question: <%= r.quiz.questions.third.name %>
+      <br>
       Your answer: <%= r.option_response_3 %>
       <hr>
     <% end %>

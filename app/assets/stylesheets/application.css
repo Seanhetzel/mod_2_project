@@ -23,6 +23,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
+  background-color:grey;
 }
 
 .wrapper h1,h2,h3,h4{
@@ -68,6 +69,14 @@
   text-align: center;
   font-family: Arial;
   grid-area: 3 / 2 / 6 / 5; 
+}
+
+.results {
+  background-color:black;
+  grid-area: 1 / 2 / 6 / 5; 
+  font-family: Arial;
+  font-size: 1em;
+  text-align: center;
 }
 
 ul {
