@@ -6,8 +6,8 @@ class AuthController < ApplicationController
 
   def verify
     @user = User.find_by(username: params[:auth][:username])
-
-    if @user
+    
+    if @user && @user.authenticate(params[:auth][:password])
       session[:user_id] = @user.id
       redirect_to quizzes_path
     else
