@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+ .menu {
+  text-align: right;
+}
+
+.wrapper {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+  background-color: #1ECBE1;
+  text-align: center;
+}
+
+.credentials {
+  display: inline-block;
+  background-color:#015CFE;
+  color: white;
+}
