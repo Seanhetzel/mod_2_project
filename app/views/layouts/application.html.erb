@@ -9,7 +9,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <% if logged_in? %>
       <div>
+        <%= link_to 'All Quizzes', quizzes_path, {class: 'item'} %>
         <%= link_to 'Logout', logout_path, {class: 'item'} %>
+      </div>
+    <% else %>
+      <div>
+        <%= link_to 'Sign up', new_user_path, {class: 'item'} %>
       </div>
     <% end %>
     <br>
