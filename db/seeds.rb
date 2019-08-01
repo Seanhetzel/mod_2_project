@@ -9,6 +9,7 @@
 vacation_spot = Quiz.create(name:"travel destination?")
 favorite_food = Quiz.create(name:"what food do you like?")
 travel_method = Quiz.create(name:"how do you like to travel?")
+psycho_test = Quiz.create(name:"psychopath test")
 
 vacation_spot_question_1 = Question.create(name:"do you like warm weather?", quiz_id:1)
 vacation_spot_question_2 = Question.create(name:"do you like experiencing cultures and history?", quiz_id:1)
@@ -21,6 +22,10 @@ favorite_food_question_3 = Question.create(name:"are you adventurous?", quiz_id:
 travel_method_question_1 = Question.create(name:"do you get carsick?", quiz_id:3)
 travel_method_question_2 = Question.create(name:"do you like scenic routes?", quiz_id:3)
 travel_method_question_3 = Question.create(name:"do you like to fly?", quiz_id:3)
+
+psycho_test_question_1 = Question.create(name:"Do you feel remorse or guilt?", quiz_id:4)
+psycho_test_question_2 = Question.create(name:"Can you emotionally connect with others?", quiz_id:4)
+psycho_test_question_3 = Question.create(name:"Do you prefer skim or whole milk?", quiz_id:4)
 
 vacation_spot_1_option_1 = Option.create(name:"yes", question_id:1) # 1
 vacation_spot_1_option_2 = Option.create(name:"no", question_id:1) # 2
@@ -50,6 +55,21 @@ travel_method_2_option_2 = Option.create(name:"no", question_id:8) # 18
 
 travel_method_3_option_1 = Option.create(name:"yes", question_id:9) # 19
 travel_method_3_option_2 = Option.create(name:"no", question_id:9) # 20
+
+psycho_test_1_question_1 = Option.create(name:"Often", question_id:10) # 21 
+psycho_test_1_question_2 = Option.create(name:"Sometimes", question_id:10) # 22 
+psycho_test_1_question_3 = Option.create(name:"Never", question_id:10) # 23 
+
+psycho_test_2_question_1 = Option.create(name:"Often", question_id:11) # 24
+psycho_test_2_question_2 = Option.create(name:"Sometimes", question_id:11) # 25
+psycho_test_2_question_3 = Option.create(name:"Never", question_id:11) # 26
+
+psycho_test_3_question_1 = Option.create(name:"Skim", question_id:12) # 27
+psycho_test_3_question_2 = Option.create(name:"Whole", question_id:12) # 28
+
+
+
+
 
 # user_1 = User.create(username:"Rick", password:"1234")
 # user_2 = User.create(username:"Morty", password:"0000")

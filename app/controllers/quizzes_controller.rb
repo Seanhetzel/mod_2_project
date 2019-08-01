@@ -9,15 +9,23 @@ class QuizzesController < ApplicationController
         @quiz = Quiz.find(params[:id])
         # @options = @quiz.questions.first.options
         @user_options = UserOption.new 
+        #@question = @quiz.questions.first
+        #@options = @quiz.questions.first.options
+        #render :show
     end
 
     def new
         @quiz = Quiz.new
     end
 
+    def create 
+        #byebug 
+    end
+
     def edit
         @quiz = Quiz.find(params[:id])
     end
+
 end
 
 # <%= @quiz.name %><hr>
