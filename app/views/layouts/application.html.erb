@@ -11,8 +11,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <% if logged_in? %>
       <div class="menu">
-        <%= link_to 'All Quizzes', quizzes_path, {class: 'item'} %>
-        <%= link_to 'Logout', logout_path, {class: 'item'} %>
+        <ul>
+          <li><%= link_to 'All Quizzes', quizzes_path, {class: 'item'} %></li>
+          <li><%= link_to 'Logout', logout_path, {class: 'item'} %></li>
+        </ul>
       </div>
     <% else %>
       <div class="menu">

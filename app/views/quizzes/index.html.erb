@@ -1,9 +1,11 @@
 <%= stylesheet_link_tag "application.css" %>
 
 <div class="wrapper">
-  <div class="credentials">
+  <body>
+  <div class="questions">
   <% @quizzes.each do |quiz| %>
   <%= link_to quiz.name, quiz_path(quiz) %><br>
   <% end %>
   </div>
+  </body>
 </div>
