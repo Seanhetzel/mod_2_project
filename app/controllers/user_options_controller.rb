@@ -15,8 +15,8 @@ class UserOptionsController < ApplicationController
     end
 
     def results
-        # @response_record = UserOption.find_by(user_id: session[:user_id])
         @response_record = UserOption.where("user_id = '#{session[:user_id]}'")
+        flash[:message] = "You must take a quiz to view quiz results."
         # byebug
         @user = User.find(session[:user_id])
         render '/quizzes/results'

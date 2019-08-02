@@ -9,13 +9,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <% if logged_in? %>
+    <% if logged_in? && UserOption.where("user_id = '#{session[:user_id]}'").size == 0 %>
       <div class="menu">
         <ul>
           <li><%= link_to 'All Quizzes', quizzes_path, {class: 'item'} %></li>
-          <li><%= link_to 'Quiz Results', user_options_results_path, {class: 'item'} %></li>
-          <li><%= link_to 'Logout', logout_path, {class: 'item'} %></li>
+            <li><%= link_to 'Logout', logout_path, {class: 'item'} %></li>
         </ul>
+      </div>
+    <% elsif logged_in? %>
+      <div class="menu">
+          <ul>
+            <li><%= link_to 'All Quizzes', quizzes_path, {class: 'item'} %></li>
+            <li><%= link_to 'Quiz Results', user_options_results_path, {class: 'item'} %></li>
+            <li><%= link_to 'Logout', logout_path, {class: 'item'} %></li>
+          </ul>
       </div>
     <% else %>
       <div class="menu">
