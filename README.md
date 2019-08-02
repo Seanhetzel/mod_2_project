@@ -1,24 +1,37 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Mod 2 Project
+##### by [@seanhetzel](https://github.com/Seanhetzel) & [@aminamos](https://github.com/aminamos)
 
-Things you may want to cover:
+## Project Requirements:
 
-* Ruby version
+[draft]
 
-* System dependencies
+## Description
 
-* Configuration
+This was created to satisfy the requirements for the module 2 project at Flatiron School. Development completed by @seanhetzel1 nd @aminamos
 
-* Database creation
+## Prerequisites
 
-* Database initialization
+[draft]
 
-* How to run the test suite
+## Installation
+1. Fork and clone the repo
+2. `$ Bundle install` to get dependencies
+3. `$ rails s` to start the web server
+4. `$ rails c` to enter the console
+5. If necessary, `CTRL+C` / `CMD+C` to hard-exit the application
 
-* Services (job queues, cache servers, search engines, etc.)
+## Login
+  - User must login or sign-up before seeing a list of the available quizzes
 
-* Deployment instructions
+## Contributions
+Please read the CONTRIBUTING.md file for guidance.
 
-* ...
+## Help and Questions
+Open an issue to ask the owners of the project questions.
+
+
+
+## Acknowledgments
+
+Thank you to our instructors at Flatiron School: Chris Arnold, Lucy Suddenly, and Soundarya Rajendran
