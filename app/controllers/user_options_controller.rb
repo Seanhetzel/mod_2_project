@@ -1,5 +1,8 @@
 class UserOptionsController < ApplicationController
+
+    helper_method :quiz_result
     before_action :redirect_user
+
     def create
         @uo = UserOption.new(user_id: session[:user_id], quiz_id: params[:qid], option_response_1: params[:user_option][:option_response_1], option_response_2: params[:user_option][:option_response_2], option_response_3: params[:user_option][:option_response_3])
         if @uo
@@ -18,6 +21,11 @@ class UserOptionsController < ApplicationController
         @user = User.find(session[:user_id])
         render '/quizzes/results'
     end
+
+    def quiz_result
+        "test"
+    end
+
 
     # private
 

@@ -41,6 +41,18 @@
     <%= f.collection_select :option_response_3, Option.where("id = '19' OR id = '20'"), :name, :name %>
   <br><br><%= f.submit "Submit", :id => "cbutton", :class => "cbutton" %>
   <% end %>
+  <% elsif @quiz.id == 4 %>
+  <%= form_for @user_options, :url => user_options_path(@user_options, :qid => @quiz.id), :html => {:method => :post}  do |f| %>
+    <%= @quiz.questions.first.name %>
+    <%= f.collection_select :option_response_1, Option.where("id = '21' OR id = '22' OR id = '23'"), :name, :name %>
+    <hr>
+    <%= @quiz.questions.second.name %>
+    <%= f.collection_select :option_response_2, Option.where("id = '24' OR id = '25' OR id = '26'"), :name, :name %>
+    <hr>
+    <%= @quiz.questions.third.name %>
+    <%= f.collection_select :option_response_3, Option.where("id = '27' OR id = '28'"), :name, :name %>
+  <br><br><%= f.submit "Submit", :id => "cbutton", :class => "cbutton" %>
+  <% end %>
 <% end %>
 </div>
 </body>

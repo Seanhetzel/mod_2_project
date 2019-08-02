@@ -15,6 +15,8 @@
  */
  .menu {
   text-align: right;
+  font-family: 'Open Sans', Arial;
+  font-size: 1em
 }
 
 .wrapper {
@@ -23,12 +25,11 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
-  background-color:grey;
   text-align: center;
 }
 
 .wrapper h1,h2,h3,h4{
-  font-family: open-sans, arial;
+  font-family: 'Open Sans', arial;
 }
 
 .title{
@@ -45,7 +46,7 @@
   width: 100px;
   color:white;
   font: bold 15px arial, sans-serif;
-  background-color:rgba(255, 0, 0, 0.0);
+  /* background-color:rgba(255, 0, 0, 0.0); */
 }
 
 .cbutton:hover {
@@ -59,11 +60,11 @@
 
 .credentials {
   display: inline-block;
-  background-color:#015CFE;
+  /* background-color:#015CFE; */
   font-size: 2em;
   color: white;
   font-family: Arial;
-  grid-area: 1 / 2 / 6 / 5; 
+  grid-area: 3 / 3 / 6 / 5;
 } 
 
 .questions {
@@ -74,11 +75,10 @@
 }
 
 .results {
-  background-color:black;
-  grid-area: 1 / 2 / 6 / 5; 
-  font-family: Arial;
   font-size: 1em;
-  text-align: center;
+  color: white;
+  font-family: 'Open Sans', Arial;
+  grid-area: 1 / 2 / 6 / 5; 
 }
 
 ul {
