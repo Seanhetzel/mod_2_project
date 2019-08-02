@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-vacation_spot = Quiz.create(name:"travel destination?")
-favorite_food = Quiz.create(name:"what food do you like?")
-travel_method = Quiz.create(name:"how do you like to travel?")
-psycho_test = Quiz.create(name:"psychopath test")
+vacation_spot = Quiz.create(name:"Travel Destination?")
+favorite_food = Quiz.create(name:"What Food Do You Like?")
+travel_method = Quiz.create(name:"How Do You Like To Travel?")
+psycho_test = Quiz.create(name:"Psychopath Test")
 
 vacation_spot_question_1 = Question.create(name:"do you like warm weather?", quiz_id:1)
 vacation_spot_question_2 = Question.create(name:"do you like experiencing cultures and history?", quiz_id:1)
