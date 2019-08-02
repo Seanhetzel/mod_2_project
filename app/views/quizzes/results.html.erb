@@ -1,6 +1,7 @@
 
 <div class="wrapper">
   <div class="results">
+  <p>Number of quizzes answered: <%= @response_record.size %></p>
     <% @response_record.each do |r| %>
       <h2><%= r.quiz.name %></h2>
       The question: <%= r.quiz.questions.first.name %><br><br>

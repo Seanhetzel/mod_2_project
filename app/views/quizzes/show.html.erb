@@ -3,6 +3,7 @@
   <h4><%= @quiz.name %></h4>
 </div>
 
+<body>
 <div class="questions">
 <% if @quiz.id == 1 %>
   <%= form_for @user_options, :url => user_options_path(@user_options, :qid => @quiz.id), :html => {:method => :post} do |f| %>
@@ -54,4 +55,5 @@
   <% end %>
 <% end %>
 </div>
+</body>
 </div>

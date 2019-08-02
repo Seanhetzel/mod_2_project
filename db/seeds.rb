@@ -33,7 +33,7 @@ vacation_spot_1_option_2 = Option.create(name:"no", question_id:1) # 2
 vacation_spot_2_option_1 = Option.create(name:"yes", question_id:2) # 3
 vacation_spot_2_option_2 = Option.create(name:"no", question_id:2) # 4
 
-vacation_spot_3_option_1 = Option.create(name:"boroque", question_id:3) # 5
+vacation_spot_3_option_1 = Option.create(name:"baroque", question_id:3) # 5
 vacation_spot_3_option_2 = Option.create(name:"modern", question_id:3) # 6
 vacation_spot_3_option_3 = Option.create(name:"mid-century modern", question_id:3) # 7
 vacation_spot_3_option_4 = Option.create(name:"classical", question_id:3) # 8
@@ -56,6 +56,28 @@ travel_method_2_option_2 = Option.create(name:"no", question_id:8) # 18
 travel_method_3_option_1 = Option.create(name:"yes", question_id:9) # 19
 travel_method_3_option_2 = Option.create(name:"no", question_id:9) # 20
 
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+
 psycho_test_1_question_1 = Option.create(name:"Often", question_id:10) # 21 
 psycho_test_1_question_2 = Option.create(name:"Sometimes", question_id:10) # 22 
 psycho_test_1_question_3 = Option.create(name:"Never", question_id:10) # 23 
@@ -66,21 +88,3 @@ psycho_test_2_question_3 = Option.create(name:"Never", question_id:11) # 26
 
 psycho_test_3_question_1 = Option.create(name:"Skim", question_id:12) # 27
 psycho_test_3_question_2 = Option.create(name:"Whole", question_id:12) # 28
-
-
-
-
-
-# user_1 = User.create(username:"Rick", password:"1234")
-# user_2 = User.create(username:"Morty", password:"0000")
-# user_3 = User.create(username:"Summer", password:"4321")
-
-# user_option_1 = UserOption.create(user_id:1, option_id:1)
-# user_option_2 = UserOption.create(user_id:1, option_id:3)
-# user_option_3 = UserOption.create(user_id:1, option_id:5)
-# user_option_4 = UserOption.create(user_id:1, option_id:9)
-# user_option_5 = UserOption.create(user_id:1, option_id:11)
-# user_option_6 = UserOption.create(user_id:1, option_id:13)
-# user_option_7 = UserOption.create(user_id:1, option_id:15)
-# user_option_8 = UserOption.create(user_id:1, option_id:17)
-# user_option_9 = UserOption.create(user_id:1, option_id:19)
