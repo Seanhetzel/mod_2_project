@@ -2,6 +2,7 @@
 <div class="wrapper">
   <div class="results">
     <% @response_record.each do |r| %>
+      <h2><%= r.quiz.name %></h2>
       The question: <%= r.quiz.questions.first.name %><br><br>
       Your answer: <%= r.option_response_1 %><br>
       <br>
@@ -9,8 +10,12 @@
       Your answer: <%= r.option_response_2 %><br>
       <br>
       The question: <%= r.quiz.questions.third.name %><br><br>
-      Your answer: <%= r.option_response_3 %><br>
+      Your answer: <%= r.option_response_3 %>
+
+      <h2>Result: </h2>
+      <img src="https://do6gbw1x8hs3.cloudfront.net/spree/article_images/24722/original/mobile.gif?1456822219" width="600px">
       <hr>
+      
     <% end %>
   </div>
 </div>
