@@ -28,7 +28,7 @@ vacation_spot_1_option_2 = Option.create(name:"no", question_id:1) # 2
 vacation_spot_2_option_1 = Option.create(name:"yes", question_id:2) # 3
 vacation_spot_2_option_2 = Option.create(name:"no", question_id:2) # 4
 
-vacation_spot_3_option_1 = Option.create(name:"boroque", question_id:3) # 5
+vacation_spot_3_option_1 = Option.create(name:"baroque", question_id:3) # 5
 vacation_spot_3_option_2 = Option.create(name:"modern", question_id:3) # 6
 vacation_spot_3_option_3 = Option.create(name:"mid-century modern", question_id:3) # 7
 vacation_spot_3_option_4 = Option.create(name:"classical", question_id:3) # 8
@@ -50,3 +50,25 @@ travel_method_2_option_2 = Option.create(name:"no", question_id:8) # 18
 
 travel_method_3_option_1 = Option.create(name:"yes", question_id:9) # 19
 travel_method_3_option_2 = Option.create(name:"no", question_id:9) # 20
+
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
+# Test.create(check: "#{Option.find(1).name}#{Option.find(3).name}#{Option.find(5).name}", quiz_result: "this is what you are")
